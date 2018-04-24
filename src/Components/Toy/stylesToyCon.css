@@ -1,0 +1,20 @@
+
+ .cntBody  {                  
+    border:1px solid lightgray; 
+    margin:1px;
+}
+
+
+ .cntHeader {     
+    height:50px;                                        
+    border-width:1px;
+    border-style:Solid;
+    border-color:lightgray;
+    margin:1px;
+    margin-top:2px;
+}
+
+.bgclr{background-color: gray;}
+
+
+

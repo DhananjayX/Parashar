@@ -1,5 +1,4 @@
 import React , { Component } from 'react';
-import Toy from '../Toy/Toy';
 import Head from './Head';
 import ToyContainer from '../Toy/ToyContainer';
 
