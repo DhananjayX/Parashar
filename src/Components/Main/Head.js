@@ -2,8 +2,6 @@ import React , { Component } from 'react';
 
 class Head extends Component{
 
-
-
 render() {
             var styles1 = {                    
                 background:"#80B5DA",

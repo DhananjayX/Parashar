@@ -30,7 +30,8 @@ class  Toy extends Component {
                     color:"white",
                     width:"140px"   ,  
                     borderWidth:"1px",
-                    fontSize:"1.0em" 
+                    fontSize:"1.3em" ,
+                    fontFamily:"inherit"
                 } ,
                 cnt1 :{
                     background:"#B81651",
