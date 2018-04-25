@@ -1,7 +1,7 @@
 
 import React ,{ Component }  from 'react';
-import './stylesToy.css';
-
+import './css/stylesToy.css';
+import madat from '../xtemp/trs/madat';
 
 class  Toy extends Component {  
     

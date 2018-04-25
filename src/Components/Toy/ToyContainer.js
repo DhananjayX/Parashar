@@ -1,15 +1,16 @@
 
 import React ,{ Component }  from 'react';
 import Toy from './Toy';
-import './stylesToyCon.css';
+import './css/stylesToyCon.css';
 
-class  ToyContainer extends Component {        
+class  ToyContainer extends Component {   
+    
     render() {
        
         var ls = [];
          for(var i=0;i<this.props.ToyCount;i++)
          {
-             ls.push(<Toy/>);
+             ls.push(<Toy key={i}/>);
          }
         return (       
             <div>   
