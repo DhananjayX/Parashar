@@ -7,30 +7,34 @@ class  ToyContainer extends Component {
     
     constructor(props) {
         super(props);
-        this.state = { cnt: 1 };
+        this.state = {toys:[] };
         this.Addtoy = this.Addtoy.bind(this);
+        
+        this.Addtoy();
+        /*
+        var ltoy =  this.state.toys;
+        ltoy.push(<Toy key={0} />);
+        this.setState({ toys:ltoy  });
+        */
       }
 
     Addtoy(){
-        this.setState({ cnt: this.state.cnt+1 });
-        console.log('comp added');
-        
+       
+        var ltoy =  this.state.toys;
+        ltoy.push(<Toy key={this.state.toys.length+1} />);
+        this.setState({ toys:ltoy  });                
     }
 
     render() {       
-        var ls = [];        
-         for(var i=0;i<this.state.cnt;i++)
-         {
-             ls.push(<Toy key={i} />);
-         }
+        
         return (       
             <div>   
                 <div className="cntHeader bgclr">
-                    <input className="btnhdr" value="Add a component +" type="button" name="btnAdd" onClick = {this.Addtoy}/>
-                    total toy count = {this.state.cnt}
+                    <input className="btnhdr" value="Add a Toy" type="button" name="btnAdd" onClick = {this.Addtoy}/>
+                    total toy count = {this.state.toys.length}
                 </div>
                 <div className="cntBody">
-                    {ls}  
+                    {this.state.toys}  
                 </div>              
                     
             </div>
