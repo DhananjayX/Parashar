@@ -4,7 +4,7 @@
         margin:10px;
         padding:10px;
         display:inline-block;
-        border-width:1px  ;
+        border:1px solid #5A7A7D;
         border-radius:8px;
 
     }
@@ -39,7 +39,9 @@
     } 
     .subscribe
     {
+        
         margin:0 auto;
+        margin-top:30px;
         border:1px solid white;        
     }
     .cnt {
@@ -65,4 +67,18 @@
     {
         text-align: center;
 
+    }
+
+    .removeToy
+    {
+        position: relative;
+        float: right;
+        width:27px;
+        height:27px;
+        border:1px solid 595D73;
+        color:white;
+        border-radius: 50% 50%;
+        text-align: center;
+        background-color: #16877C    ;        
+        cursor: pointer;
     }

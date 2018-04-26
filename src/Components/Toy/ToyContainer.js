@@ -8,33 +8,40 @@ class  ToyContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {toys:[] };
-        this.Addtoy = this.Addtoy.bind(this);
-        
-        this.Addtoy();
-        /*
-        var ltoy =  this.state.toys;
-        ltoy.push(<Toy key={0} />);
-        this.setState({ toys:ltoy  });
-        */
+
+        this.addToy = this.addToy.bind(this);
+        this.removeToy = this.removeToy.bind(this);
+        this.addToy();
+
       }
 
-    Addtoy(){
+    removeToy(ind)
+    {
+            let ltoy =  this.state.toys;
+            console.log('index for deletion :' + ind)
+            ltoy.splice(ind,1);
+            this.setState({ toys:ltoy  });     
+
+    }
+    addToy(){
        
-        var ltoy =  this.state.toys;
-        ltoy.push(<Toy key={this.state.toys.length+1} />);
+        let ltoy =  this.state.toys;
+        ltoy.push(<Toy key={this.state.toys.length} index={this.state.toys.length} simplemethod ={this.removeToy}  />);
         this.setState({ toys:ltoy  });                
     }
 
+
+   
     render() {       
         
         return (       
             <div>   
                 <div className="cntHeader bgclr">
-                    <input className="btnhdr" value="Add a Toy" type="button" name="btnAdd" onClick = {this.Addtoy}/>
+                    <input className="btnhdr" value="Add a Toy" type="button" name="btnAdd" onClick ={() => this.addToy()} />
                     total toy count = {this.state.toys.length}
                 </div>
                 <div className="cntBody">
-                    {this.state.toys}  
+                    {this.state.toys}
                 </div>              
                     
             </div>
