@@ -4,9 +4,20 @@
     margin:1px;
 }
 
+.btnhdr {
+    background:#80B5DA;
+    height:40px;
+    border-width:1px  ;
+    margin:08px;
+    color:black;
+    width:240px   ;  
+    border-width:1px;
+    font-size:1.3em ;
+    font-family:inherit;
+} 
 
  .cntHeader {     
-    height:50px;                                        
+    height:70px;                                        
     border-width:1px;
     border-style:Solid;
     border-color:lightgray;

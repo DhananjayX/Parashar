@@ -9,7 +9,7 @@ class  App extends Component {
             return (
             <div> 
                     <Head/>            
-                    <ToyContainer ToyCount="1"/>
+                    <ToyContainer ToyCount="50"/>
             </div>   
 
             );

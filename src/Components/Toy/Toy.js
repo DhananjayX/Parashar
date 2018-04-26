@@ -1,14 +1,16 @@
 
 import React ,{ Component }  from 'react';
 import './css/stylesToy.css';
-import madat from '../xtemp/trs/madat';
+
 
 class  Toy extends Component {  
     
-    Subscribed() {
+    Subscribed(nm) {
                     console.log(" i m clicked at :" + Date.now());
+                    alert('Subscribed!' );
     }
 
+  
     render() {
                 
         return (
@@ -18,7 +20,7 @@ class  Toy extends Component {
                     <div className="cnt2"> <div className="nbr">  </div>  </div>
                 </div>
                 <div>
-                    <input className="btn" onClick= {this.Subscribed} type="button" name="Subscribe" value="Subscribe"/>                    
+                    <input className="btn" onClick= {this.Subscribed} type="button" name="Subscribe" value= "Subscribe"/>                    
                 </div>
         </div>   
         );
