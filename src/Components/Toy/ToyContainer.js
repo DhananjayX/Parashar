@@ -5,7 +5,8 @@ import './css/stylesToyCon.css';
 
 class  ToyContainer extends Component {   
     
-    constructor(props) {
+    constructor(props) 
+    {
         super(props);
         this.state = {toys:[] };
 
@@ -13,7 +14,7 @@ class  ToyContainer extends Component {
         this.removeToy = this.removeToy.bind(this);
         this.addToy();
 
-      }
+    }
 
     removeToy(ind)
     {
@@ -23,6 +24,7 @@ class  ToyContainer extends Component {
             this.setState({ toys:ltoy  });     
 
     }
+    
     addToy(){
        
         let ltoy =  this.state.toys;
