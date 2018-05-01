@@ -28,5 +28,15 @@
 
 .bgclr{background-color: white;}
 
+.inlblk
+{
+    display: inline-block;
+
+}
+.leftmrg30
+{
+    margin-left: 30px;
+
+}
 
 

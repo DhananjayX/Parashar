@@ -1,0 +1,13 @@
+.simpledivmain
+{
+    border:1px solid gray;
+    border-radius: 10% 10%;
+    background-color: beige;
+    padding:20px;
+    margin-bottom: 5px;
+}
+.smcnthdr
+{
+    height:60px;
+
+}

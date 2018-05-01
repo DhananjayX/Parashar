@@ -1,7 +1,8 @@
 import React , { Component } from 'react';
 import Head from './Head';
+//import ToyContainer from '../Toy/ToyContainer';
+import SimpleContainer from '../SimpleComp/simpleContainer';
 import ToyContainer from '../Toy/ToyContainer';
-
 
 class  App extends Component {        
         render() {
@@ -9,7 +10,8 @@ class  App extends Component {
             return (
             <div> 
                     <Head/>            
-                    <ToyContainer ToyCount="50"/>
+                    
+                    <ToyContainer />
             </div>   
 
             );
